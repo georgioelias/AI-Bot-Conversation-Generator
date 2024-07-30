@@ -2,12 +2,11 @@ import streamlit as st
 import datetime
 from openai import OpenAI
 import anthropic
-import os
 import time
 
 # Set your API keys
-openai_client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
-claude_client = anthropic.Anthropic(api_key=os.environ.get('ANTHROPIC_API_KEY'))
+openai_client = OpenAI(api_key=api_key=st.secrets["OPENAI_API_KEY"])
+claude_client = anthropic.Anthropic(api_key=st.secrets["ANTHROPIC_API_KEY"])
 
 def claude_format(my_list, separator=", "):
     temp=separator.join(map(str, my_list))
