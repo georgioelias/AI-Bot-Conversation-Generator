@@ -65,12 +65,8 @@ streamlit run app.py
 
 Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
-- [Streamlit](https://www.streamlit.io/) for the awesome framework.
+- [Streamlit](https://www.streamlit.io/) for the framework.
 - [OpenAI](https://www.openai.com/) and [Anthropic](https://www.anthropic.com/) for their powerful language models.
 
