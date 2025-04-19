@@ -168,7 +168,7 @@ with left_sidebar:
     st.sidebar.subheader("Create a New Bot")
     if len(st.session_state.bots) < 5:
         new_bot_name = st.sidebar.text_input("Bot Name", key="new_bot_name")
-        new_bot_model = st.sidebar.selectbox("Choose Model", ["gpt-4","gpt-4o-mini", "gpt-3.5-turbo", "claude-3-5-sonnet-20240620"], key="new_bot_model")
+        new_bot_model = st.sidebar.selectbox("Choose Model", ["gpt-4","gpt-4o-mini", "gpt-3.5-turbo","o4-mini","gpt-4.1","claude-3-5-sonnet-20240620"], key="new_bot_model")
         new_bot_prompt = st.sidebar.text_area("Enter Bot Prompt", key="new_bot_prompt")
 
         if st.sidebar.button("Add Bot", key="add_bot"):
